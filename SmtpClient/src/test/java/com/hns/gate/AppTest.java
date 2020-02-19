@@ -55,6 +55,7 @@ public class AppTest
 		/* Le corps du mail */
 		String texte = "Texte du mail";
          
+		System.out.println("Je suis dans Test de l'envoie de Mail via le serveur SMTP GOOGLE");
 		SmtpClient smtp = new SmtpClient();
 		smtp.sendMail(smtpServer, from, to, objet, texte);
      } 
